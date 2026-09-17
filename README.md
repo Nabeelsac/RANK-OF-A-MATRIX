@@ -12,21 +12,23 @@ To write a python program to find the rank of a matrix
 
 ## Program:
 ```
+#Program to find the rank of a matrix.
+#Developed by: Nather Nabeel S A C
+#RegisterNumber:212224100040
+
 import os
 os.environ["OPENBLAS_NUM_THREADS"]="1"
 import numpy as np
-
-A = np.array([[3, 2, 5],
-              [1, 1, 2],
-              [3, 3, 6]])
-
-rank = np.linalg.matrix_rank(A)
-
-print(rank)
+a=np.array( [[5,-3,-10],[2,2,-3],[-3,-1,5]])
+solution=np.linalg.matrix_rank(a)
+print(solution)
 
 ```
 ## Output:
-<img width="1528" height="918" alt="image" src="https://github.com/user-attachments/assets/5cac7126-a214-4c89-8e29-8956fd8824b0" />
+
+
+<img width="1447" height="897" alt="image" src="https://github.com/user-attachments/assets/f704cab6-e78c-4d47-975c-96f56c10acd8" />
+
 
 ## Result:
 Thus the rank for the given matrix is successfully solved by  using a python program.
